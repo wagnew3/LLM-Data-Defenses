@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/LLM-Data-Defenses/static/css/main.a4352d88.css",
-    "main.js": "/LLM-Data-Defenses/static/js/main.765111f1.js",
+    "main.js": "/LLM-Data-Defenses/static/js/main.a26f0121.js",
     "static/js/453.856bebda.chunk.js": "/LLM-Data-Defenses/static/js/453.856bebda.chunk.js",
     "static/media/Data_Defenses_Against_LLMs-8.pdf": "/LLM-Data-Defenses/static/media/Data_Defenses_Against_LLMs-8.6c67cad2135489eaf279.pdf",
     "static/media/teaser.png": "/LLM-Data-Defenses/static/media/teaser.1908be39415ea9ef2246.png",
     "static/media/logo.svg": "/LLM-Data-Defenses/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/LLM-Data-Defenses/index.html",
     "main.a4352d88.css.map": "/LLM-Data-Defenses/static/css/main.a4352d88.css.map",
-    "main.765111f1.js.map": "/LLM-Data-Defenses/static/js/main.765111f1.js.map",
+    "main.a26f0121.js.map": "/LLM-Data-Defenses/static/js/main.a26f0121.js.map",
     "453.856bebda.chunk.js.map": "/LLM-Data-Defenses/static/js/453.856bebda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4352d88.css",
-    "static/js/main.765111f1.js"
+    "static/js/main.a26f0121.js"
   ]
 }
