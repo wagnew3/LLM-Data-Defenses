@@ -42,3 +42,40 @@ img {
   height: auto;
 }
 
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2.dark {
+  background-color: #f2f2f2;
+}
+
+p.warning {
+  background-color: #ff6666;
+  max-width: 250ch;
+  border-radius: 5px;
+}
+
+div {
+  font-family: Arial;
+}
+
+div.light {
+  background-color: #bbb7e7;
+  max-width: 75ch;
+  border-radius: 5px;
+  font-family: Arial;
+}
+
+div.dark {
+  background-color: #e6e6e6;
+  max-width: 75ch;
+  border-radius: 5px;
+  font-family: Arial;
+}
+
