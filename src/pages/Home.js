@@ -8,34 +8,38 @@ export default function Home() {
 	return (
 		<div>
 			<section class="section">
-				<h1 class="title">Protect your text.</h1>
-				<ProtectText />
+				<div class="container">
+					<h1 class="title">Protect your text.</h1>
+					<ProtectText />
+				</div>
 			</section>
 			<section class="section">
-				<h1 class="title">Test your protected text against ChatGPT.</h1>
-				<p>
-						Go to <a href="https://chatgpt.com">https://chatgpt.com</a> and ask
-						ChatGPT to summarize your text in three bullet points, list the names
-						of people mentioned in your text, or otherwise analyze your text. Is ChatGPT able
-						to answer your questions on the protected text?
-				</p>
-				<p class="warning">
-						<i>
-						<b>
-								Bamboozle will not protect your text from LLM inference 100% of
-								the time, nor will it protect your text from use in training or
-								finetuning. We recommend testing protected text against possible
-								attacks on LLMs such as <a href="https://chatgpt.com">ChatGPT</a>,{" "}
-								<a href="https://claude.ai/">Claude</a>, and{" "}
-								<a href="https://gemini.google.com/app">Gemini</a> to assess how
-								well Bamboozle will work for your text and threat model. There
-								will likely be future countermeasures that significantly reduce
-								the effectiveness of Bamboozle.
-						</b>{" "}
-						However, Bamboozle will make it more difficult for currently
-						existing LLMs to analyze your text.
-						</i>
-				</p>
+				<div class="container">
+					<h1 class="title">Test your protected text against ChatGPT.</h1>
+					<p>
+							Go to <a href="https://chatgpt.com">https://chatgpt.com</a> and ask
+							ChatGPT to summarize your text in three bullet points, list the names
+							of people mentioned in your text, or otherwise analyze your text. Is ChatGPT able
+							to answer your questions on the protected text?
+					</p>
+					<p class="warning">
+							<i>
+							<b>
+									Bamboozle will not protect your text from LLM inference 100% of
+									the time, nor will it protect your text from use in training or
+									finetuning. We recommend testing protected text against possible
+									attacks on LLMs such as <a href="https://chatgpt.com">ChatGPT</a>,{" "}
+									<a href="https://claude.ai/">Claude</a>, and{" "}
+									<a href="https://gemini.google.com/app">Gemini</a> to assess how
+									well Bamboozle will work for your text and threat model. There
+									will likely be future countermeasures that significantly reduce
+									the effectiveness of Bamboozle.
+							</b>{" "}
+							However, Bamboozle will make it more difficult for currently
+							existing LLMs to analyze your text.
+							</i>
+					</p>
+				</div>
 			</section>
 			<img src={fig_teaser} alt="Data defenses for text overview. The attacker is using an LLM to extract PII from Alice’s social media history. A data defense inserted into Alice’s social media history causes the LLM to produce irrelevant output."/>
 			<div class="dark">

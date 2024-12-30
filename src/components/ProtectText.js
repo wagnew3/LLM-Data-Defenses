@@ -2,22 +2,22 @@ import { useState } from "react";
 import DEFENSES from "../lib/defenses"
 
 export default function ProtectText() {
+	const [textRows, setTextRows] = useState(20);
 	const [filterText, setFilterText] = useState("");
 	const [protectedText, setProtectedText] = useState("");
-	const [protectedTextQuestion, setProtectedTextQuestion] = useState("");
+	//const [protectedTextQuestion, setProtectedTextQuestion] = useState("");
+	const [copyButtonText, setcopyButtonText] = useState("Copy Text");
 
 	const handleInputChange = (event) => {
 			setFilterText(event.target.value);
 	};
 
 	const copyText = () => {
-			console.log("start copy");
 			navigator.clipboard.writeText(protectedText);
-			alert("Copied the text: " + protectedText);
-			console.log("end copy");
+			setcopyButtonText("Copied!");
 	};
 
-	const handleSearch = () => {
+	const handleSubmit = () => {
 			const rows = [];
 			let lastCategory = null;
 			let defense = "";
@@ -40,31 +40,38 @@ export default function ProtectText() {
 					filterText.substring(indices[insert_index], filterText.length)
 					);
 			setProtectedText(fullProtectedText);
-			setProtectedTextQuestion(
-					"Summarize the following text in three bullet points: ".concat(
-					fullProtectedText
-					)
-			);
+			// setProtectedTextQuestion(
+			// 		"Summarize the following text in three bullet points: ".concat(
+			// 		fullProtectedText
+			// 		)
+			// );
+			setcopyButtonText("Copy Text");
 	};
   
 	return (
-			<div>
-					<div class="light">
-					<input
-							type="text"
-							placeholder="Search..."
-							value={filterText}
-							onChange={handleInputChange}
-					/>
-					<button id="protectButton" onClick={handleSearch}>
-							Go
-					</button>
-					<p class="protected">{protectedText}</p>
-					<h2>2. Copy your protected text</h2>
-					<p>
-							<button onClick={copyText}>Copy text</button>
-					</p>
-					</div>
+		<div class="columns is-tablet">
+			<div class="column is-6">
+				<textarea
+					class="textarea"
+					placeholder="Insert text for protection"
+					rows={textRows}
+					value={filterText}
+					onChange={handleInputChange}
+				></textarea>
+				<button class="button" id="protectButton" onClick={handleSubmit}>
+						Go
+				</button>
 			</div>
+			<div class="column is-6">
+				<textarea
+					class="textarea"
+					placeholder="Protected text will appear here"
+					rows={textRows}
+					value={protectedText}
+					readonly
+				></textarea>
+				<button class="button" id="copyButton" onClick={copyText}>{copyButtonText}</button>
+			</div>
+		</div>
 	);
 }
