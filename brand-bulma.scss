@@ -1,0 +1,47 @@
+@use "sass:color";
+
+// Set brand colors
+$off-black: #363636;
+$light-blue: #418db8;
+$blue: #1a578d;
+$grey: #a4a29d;
+$green: #0b7b55;
+$yellow: #e2b204;
+$orangered: #dc6211;
+$red: #dc032e;
+
+// Set background colors?
+$off-white: #fbfaf8;
+$off-white-hsl: color.to-space($off-white, hsl);
+$off-white-h: color.channel($off-white-hsl, "hue");
+$off-white-s: color.channel($off-white-hsl, "saturation");
+$off-white-l: color.channel($off-white-hsl, "lightness");
+$off-grey: #a4a29d;
+$off-grey-hsl: color.to-space($off-grey, hsl);
+$off-grey-h: color.channel($off-grey-hsl, "hue");
+$off-grey-s: color.channel($off-grey-hsl, "saturation");
+$off-grey-l: color.channel($off-grey-hsl, "lightness");
+// $off-grey-darker: hsl($off-grey-h, $off-grey-s, 21%);
+// $off-grey-dark: hsl($off-grey-h, $off-grey-s, 29%);
+// $off-grey-light: hsl($off-grey-h, $off-grey-s, 71%);
+// $off-grey-lighter: hsl($off-grey-h, $off-grey-s, 86%);
+// $off-grey-lightest: hsl($off-grey-h, $off-grey-s, 93%);
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  $family-primary: 'Ovo, serif',
+  $family-secondary: 'Red Hat Display',
+  $scheme-h: $off-grey-h,
+  $scheme-s: $off-grey-s,
+  $text: $off-black,
+  $primary: $blue,
+  $link: $light-blue,
+  $info: $grey,
+  $success: $green,
+  $warning: $yellow,
+  $danger: $red,
+  $body-background-color: $off-white,
+);
+
+// Import the Google Font
+@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
