@@ -20,7 +20,7 @@ const Layout = () => {
       <section className="hero">
         <div className="hero-body">
           <div className="container">
-            <h1 className="subtitle is-3">Bamboozle: Protecting Text From Unauthorized Large Language Model Inference</h1>
+            <h1 className="subtitle is-3">Protecting Text From Unauthorized Large Language Model Inference</h1>
             <div className="notification is-link is-family-secondary">
               <p>
                 <a href="https://mailchi.mp/4f24aa0852fd/text-ai-data-defenses-mailing-list-sign-up">
