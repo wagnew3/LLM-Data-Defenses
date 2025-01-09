@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/LLM-Data-Defenses/static/css/main.a4afbec8.css",
-    "main.js": "/LLM-Data-Defenses/static/js/main.4fce6a12.js",
+    "main.js": "/LLM-Data-Defenses/static/js/main.6565f6cc.js",
     "static/js/453.856bebda.chunk.js": "/LLM-Data-Defenses/static/js/453.856bebda.chunk.js",
     "static/media/Data_Defenses_Against_LLMs-8.pdf": "/LLM-Data-Defenses/static/media/Data_Defenses_Against_LLMs-8.6c67cad2135489eaf279.pdf",
     "static/media/teaser.png": "/LLM-Data-Defenses/static/media/teaser.1908be39415ea9ef2246.png",
     "index.html": "/LLM-Data-Defenses/index.html",
     "main.a4afbec8.css.map": "/LLM-Data-Defenses/static/css/main.a4afbec8.css.map",
-    "main.4fce6a12.js.map": "/LLM-Data-Defenses/static/js/main.4fce6a12.js.map",
+    "main.6565f6cc.js.map": "/LLM-Data-Defenses/static/js/main.6565f6cc.js.map",
     "453.856bebda.chunk.js.map": "/LLM-Data-Defenses/static/js/453.856bebda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4afbec8.css",
-    "static/js/main.4fce6a12.js"
+    "static/js/main.6565f6cc.js"
   ]
 }
