@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./assets/brand-bulma.css";
-import "./assets/app.css";
+import "./assets/App.css";
 import reportWebVitals from './reportWebVitals';
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -10,11 +10,11 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/LLM-Data-Defenses'>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-					<Route path="/about" element={<About />} />
+          <Route index element={<Home />} exact />
+					<Route path="/about" element={<About />} exact />
         </Route>
       </Routes>
     </BrowserRouter>
