@@ -13,14 +13,14 @@ export default function Home() {
 				</div>
 				<div className="hero-body">
 					<div className="container">
-						<h1 className="subtitle is-3">Test your protected text against ChatGPT.</h1>
+						<h1 className="subtitle is-3">Test your protected text against LLama.</h1>
 						<div className="columns is-tablet">
 							<div className="column is-7">
 								<div className="content is-family-secondary">
 									<p>
-											Go to <a href="https://chatgpt.com">https://chatgpt.com</a> and ask
-											ChatGPT to summarize your text in three bullet points, list the names
-											of people mentioned in your text, or otherwise analyze your text. Is ChatGPT able
+											Go to <a href="https://build.nvidia.com/meta/llama-3_1-8b-instruct">https://build.nvidia.com/meta/llama-3_1-8b-instruct</a> and ask
+											Llama to summarize your text in three bullet points, list the names
+											of people mentioned in your text, or otherwise analyze your text. Is Llama able
 											to answer your questions on the protected text?
 									</p>
 								</div>
